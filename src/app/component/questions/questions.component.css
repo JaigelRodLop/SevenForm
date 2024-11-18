@@ -1,0 +1,15 @@
+.btn-primary {
+    background-color: #A35709; /* Cambia este color al que prefieras */
+    border-color: #A35709; /* Cambia el borde si es necesario */
+}
+
+.btn-primary:hover {
+    background-color: #FF8303; /* Color al pasar el mouse */
+    border-color: #FF8303; /* Color del borde al pasar el mouse */
+}
+
+.btn-check:checked + .btn {
+    background-color: #FF8303; /* Cambia este color al que prefieras */
+    color: white; /* Color del texto */
+    border-color: #FF8303; /* Cambia el borde si es necesario */
+}

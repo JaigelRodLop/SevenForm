@@ -1,0 +1,55 @@
+[
+    {
+      "id": 1,
+      "question": "¿Qué tan importante es la apariencia física para ti?",
+      "options": [
+        { "label": "Muy Importante", "value": 2 },
+        { "label": "Importante", "value": 1 },
+        { "label": "Nada Importante", "value": 0 }
+      ]
+    },
+    {
+        
+      "id": 2,
+      "question": "¿Te incomoda interactuar con personas de diferentes creencias?",
+      "options": [
+        { "label": "Sí, mucho", "value": 0 },
+        { "label": "Un poco", "value": 1 },
+        { "label": "Para nada", "value": 2 }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "¿Cuán cómodo/a te sientes con personas de diferentes estilos de vida?",
+      "options": [
+        { "label": "Muy cómodo", "value": 2 },
+        { "label": "Un poco cómodo", "value": 1 },
+        { "label": "Incmodo", "value": 0 }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Te resulta díficil entender con personas con diferentes puntos de vista o experiencias?",
+      "options": [
+        { "label": "Nada difícil", "value": 2 },
+        { "label": "Un poco difícil", "value": 1 },
+        { "label": "Muy difícil", "value": 0 }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "¿Piensas que es estilo de vestir de una persona es un reflejo de su personalidad?",
+      "options": [
+        { "label": "De acuerdo", "value": 2 },
+        { "label": "En desacuerdo", "value": 0 }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "¿Crees que las personas deben cambiar para adaptarse a las demás?",
+      "options": [
+        { "label": "De acuerdo", "value": 2 },
+        { "label": "En desacuerdo", "value": 0 }
+      ]
+    }
+  ]

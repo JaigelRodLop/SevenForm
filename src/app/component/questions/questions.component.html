@@ -1,0 +1,62 @@
+<div class="container">
+  <div class="row">
+    <p></p>
+    <h2>PREGUNTAS</h2>
+    <div class="col-1"></div>
+    <div class="col-10">
+    <div *ngFor="let question of questions">
+      <h4>{{ question.question }}</h4>
+      <div class="btn-group" role="group">
+        <ng-container *ngFor="let option of question.options">
+          <input type="radio" class="btn-check" name="btnradio{{ question.id }}" id="btnradio{{ question.id }}{{ option.id }}" autocomplete="off" (change)="registrarPeso(option.value, $event)">
+          <label class="btn btn-outline-primary" for="btnradio{{ question.id }}{{ option.id }}">{{ option.label }}</label>
+        </ng-container>
+      </div>
+      <hr style="border: 1px solid #ccc; margin: 20px 0;">
+    </div>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-2"></div>
+    <div class="col-8">
+      <p class="d-inline-flex gap-1">
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Evaluación
+        </a>
+      </p>
+    </div>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+        <p>Suma de elecciones:</p>
+        <h2>{{ calcularSumaPesos() }}</h2>
+        <p *ngIf="calcularSumaPesos() <= 3">
+          Intenta ponerte en el lugar de los demás para comprender mejor sus sentimientos y necesidades, puedes mejorar.
+        </p>
+        <p *ngIf="calcularSumaPesos() > 3 && calcularSumaPesos() <= 6">
+          Ser amable y considerar las opiniones de los demás es importante para construir buenas relaciones, vas por buen camino.
+        </p>
+        <p *ngIf="calcularSumaPesos() > 6 && calcularSumaPesos() <= 9">
+          Tu capacidad para conectar con otros es un regalo. Sigue cultivando esa empatía.
+        </p>
+        <p *ngIf="calcularSumaPesos() > 9">
+          Eres una persona increíble y por eso te admiro, espero que continues por este camino, sigue así.
+        </p>
+        <p></p>
+      </div>
+    </div>
+
+    <button class="btn btn-danger" (click)="reiniciar()">Reiniciar Elecciones</button>
+
+    <p class="mt-4">La variedad que no discrimina</p>
+    <p>#SinExcepciones</p>
+    <p>
+      <a href="https://www.instagram.com/sevensushigrill/">
+        <img src="https://static.vecteezy.com/system/resources/previews/018/930/692/original/instagram-logo-instagram-icon-transparent-free-png.png" class="social-icon"/>
+      </a>
+      <a href="https://www.tiktok.com/@sevensushigrill">
+        <img src="https://static.vecteezy.com/system/resources/previews/018/930/574/original/tiktok-logo-tikok-icon-transparent-tikok-app-logo-free-png.png" class="social-icon"/>
+      </a>
+    </p>
+  </div>
+</div>

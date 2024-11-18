@@ -1,0 +1,7 @@
+* {
+    color: white;
+    text-shadow: none; /* Eliminar sombra del texto */
+    font-family: 'Bebas Neue Regular', sans-serif; /* Usar la fuente de Google Fonts */
+    text-align: center;
+    font-size: x-large;
+}
